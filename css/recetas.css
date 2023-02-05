@@ -94,11 +94,13 @@ header>nav {
   width: 100%;
   height: 100%;
   background-color: #2d6d5c;
-  /* opacity: 90%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 header>nav>ul {
@@ -176,8 +178,12 @@ section {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 500px;
-  /* border: 2px solid rgb(153, 17, 231); */
+  height: 100px;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 .contenedortexto {
@@ -230,8 +236,12 @@ section {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-
   height: 100%;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
   /* align-items: center; */
 }
 
@@ -371,7 +381,6 @@ section {
   /* border: 2px solid rgb(107, 246, 0); */
 }
 
-
 .maintext {
   background-color: #85010B;
   opacity: 60%;
@@ -448,6 +457,7 @@ section {
 .menutext ul li {
   font-size: 14px;
   color: #3E8914;
+  opacity: 85%;
 }
 
 .menutext li {
@@ -458,12 +468,12 @@ section {
 .menutext li a {
   display: block;
   width: 100%;
-  padding: 20px;
+  padding: 8px;
   border-left: 5px solid;
   position: relative;
   z-index: 2;
   text-decoration: none;
-  color: #444;
+  color: #010101;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -475,19 +485,19 @@ section {
 }
 
 .menutext li:first-child a {
-  border-left: 10px solid #CAB891;
+  border-left: 20px solid #CAB891;
 }
 
 .menutext li:nth-child(2) a {
-  border-left: 10px solid #ce8a3d;
+  border-left: 20px solid #ce8a3d;
 }
 
 .menutext li:nth-child(3) a {
-  border-left: 10px solid #567633;
+  border-left: 20px solid #567633;
 }
 
 .menutext li:last-child a {
-  border-left: 10px solid #912728;
+  border-left: 20px solid #912728;
 }
 
 .menutext li a:after {
