@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 * {
   margin: 0px;
@@ -11,6 +12,7 @@
 body {
   width: 99vw;
   height: 100vh;
+  /* flex-direction: row; */
   background-image: url("https://static8.depositphotos.com/1062321/800/v/600/depositphotos_8008544-stock-illustration-light-wood-background.jpg");
   background-attachment: fixed;
 }
@@ -20,7 +22,7 @@ header {
   top: 0px;
   height: 10vh;
   width: 100%;
-  z-index: 100;
+  z-index: 100,
 }
 
 .nav {
@@ -92,6 +94,7 @@ header>nav {
   width: 100%;
   height: 100%;
   background-color: #2d6d5c;
+  /* opacity: 90%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -158,7 +161,7 @@ main {
 }
 
 section {
-  margin: 10px;
+  padding: 5px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -168,7 +171,7 @@ section {
 }
 
 .contenedorimagenes {
-  margin: 1px;
+  padding: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -178,12 +181,12 @@ section {
 }
 
 .contenedortexto {
-  margin: 1px;
+  padding: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 150px;
+  min-height: 10vw;
 }
 
 .contenedormenu {
@@ -224,8 +227,12 @@ section {
 
 .caja1 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
+
   height: 100%;
+  /* align-items: center; */
 }
 
 .caja1>img {
@@ -246,7 +253,17 @@ section {
 .caja2 {
   width: 100%;
   height: 100%;
+  background-size: cover;
   /* border: 5px solid rgb(246, 0, 213); */
+}
+
+.contenedorimagenes{
+  /* width: 1200px; */
+  width:100%;
+  height: 25vw;
+  /* height: 400px; */
+  background-size: cover;
+  /* border: 3px solid rgb(0, 144, 246); */
 }
 
 .contenedorimagenestriple a {
@@ -255,6 +272,7 @@ section {
   background-size: cover;
   /* border: 3px solid rgb(0, 144, 246); */
 }
+
 
 .cajatriple {
   /* width: 60%;
@@ -268,21 +286,52 @@ section {
 }
 
 
+.cajaingredientes{
+  background-size: cover; 
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid rgb(246, 0, 0); */
+}
+.separcioncajas{
+  background-size: cover; 
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  width: 5%;
+  height: 100%;
+  /* border: 1px solid rgb(246, 0, 0); */
+
+}
+.cajapreparacion{
+  background-size: cover; 
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  width: 65%;
+  height: 100%;
+  /* border: 1px solid rgb(246, 0, 0); */
+}
+
+
 .titlecontainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 90vw;
   height: 110px;
-  /* border: 3px solid rgb(246, 0, 193); */
+  /* border: 1px solid rgb(246, 0, 193); */
 
 }
 
 .container {
   margin: 1px;
   width: 90vw;
+  min-height: 40vw;
   display: grid;
-  /* border: 3px solid rgb(0, 246, 86); */
+  /* border: 3px solid rgb(28, 127, 62); */
 }
 
 .logovenezuela {
@@ -317,17 +366,24 @@ section {
   font-style: italic;
   text-align: center;
   font-weight: bolder;
-  width: 60%;
+  font-size: 1.1em;
+  text-transform: uppercase;
   /* border: 2px solid rgb(107, 246, 0); */
 }
 
 
 .maintext {
   background-color: #85010B;
+  opacity: 60%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 .maintext p {
@@ -340,32 +396,44 @@ section {
 
 .ingredientes {
   background-color: #85010B;
+  opacity: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 .ingredientes p {
   height: 100%;
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   text-align: center;
   font-family: cursive;
 }
 
 .preparacion {
   background-color: #85010B;
+  opacity: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 .preparacion p {
   height: 100%;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   font-family: cursive;
 }
@@ -454,8 +522,6 @@ section {
   background: #912728;
 }
 
-
-
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -495,6 +561,7 @@ footer {
   align-items: center;
   display: flex;
   background-color: #B48648;
+  opacity: 70%;
 }
 
 footer ul {
