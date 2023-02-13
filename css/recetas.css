@@ -10,10 +10,12 @@
 }
 
 body {
-  width: 99vw;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100%;
+  /* min-width: 500px; */
   background-image: url("https://static8.depositphotos.com/1062321/800/v/600/depositphotos_8008544-stock-illustration-light-wood-background.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  /* box-sizing: border-box; */
 }
 
 header {
@@ -25,15 +27,21 @@ header {
 }
 
 .nav {
+  /* width: 100%; */
   font-family: 'Titillium Web';
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .nav * {
   box-sizing: border-box;
   transition: all .35s ease;
+  display: flex;
+  width: 100%;
 }
 
 .nav li {
@@ -90,21 +98,17 @@ header {
 
 
 header>nav {
-  width: 100%;
-  height: 100%;
   background-color: #2d6d5c;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1px;
   text-align: center;
+  /* min-width: 10px; */
   box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
 }
 
 header>nav>ul {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -115,8 +119,6 @@ header>nav>ul {
 nav>ul>li {
   text-decoration: none;
   color: #819974;
-  width: 180px;
-  margin-bottom: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,7 +133,6 @@ nav>ul>li {
 nav>ul>li>a {
   text-decoration: none;
   color: black;
-  width: 180px;
   margin-bottom: 1px;
   display: flex;
   flex-direction: row;
@@ -145,17 +146,17 @@ nav>ul>li>a {
 }
 
 main {
-  margin-top: 5rem;
-  width: 100vw;
+  margin-top: 5.8rem;
+  width: 98vw;
   min-height: 100vh;
   display: flex;
-  /* display: flex; */
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   /* border: 5px solid rgb(217, 50, 44); */
 }
 
@@ -166,6 +167,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
   /* border: 2px solid rgb(14, 14, 14); */
 }
 
@@ -284,7 +287,7 @@ section {
 .cajatriple {
   /* width: 60%;
   height: 60%;*/
-  background-size: cover; 
+  background-size: cover;
   margin: 2px;
   display: flex;
   width: 100%;
@@ -294,7 +297,7 @@ section {
 
 
 .cajaingredientes{
-  background-size: cover; 
+  background-size: cover;
   padding: 2px;
   margin: 2px;
   display: flex;
@@ -303,7 +306,7 @@ section {
   /* border: 1px solid rgb(246, 0, 0); */
 }
 .separcioncajas{
-  background-size: cover; 
+  background-size: cover;
   padding: 2px;
   margin: 2px;
   display: flex;
@@ -313,7 +316,7 @@ section {
 
 }
 .cajapreparacion{
-  background-size: cover; 
+  background-size: cover;
   padding: 2px;
   margin: 2px;
   display: flex;
