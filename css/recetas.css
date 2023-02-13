@@ -10,12 +10,8 @@
 }
 
 body {
-  /* height: 100vh; */
   min-height: 100%;
-  /* min-width: 500px; */
   background-image: url("https://static8.depositphotos.com/1062321/800/v/600/depositphotos_8008544-stock-illustration-light-wood-background.jpg");
-  /* background-attachment: fixed; */
-  /* box-sizing: border-box; */
 }
 
 header {
@@ -27,7 +23,6 @@ header {
 }
 
 .nav {
-  /* width: 100%; */
   font-family: 'Titillium Web';
   text-transform: uppercase;
   text-align: center;
@@ -649,4 +644,38 @@ footer>ul>li:nth-child(3) a:before {
 
 footer>ul>li:nth-child(4) a:before {
   background: #2B2C1E;
+}
+
+@media (min-width: 600px) and (max-width: 1280px) {
+  main {
+    width: 740px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    width: 368px;
+  }
+
+  .nav a {
+    font-size: 8px;
+  }
+
+  footer>ul>li>a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .titlecontainer {
+    width: 320px;
+  }
+
+  .titletext{
+    width: 380px;
+  }
+
+  .item1{
+    font-size: 40px;
+  }
 }
