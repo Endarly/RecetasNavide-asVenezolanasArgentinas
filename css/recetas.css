@@ -14,13 +14,30 @@ body {
   background-image: url("https://static8.depositphotos.com/1062321/800/v/600/depositphotos_8008544-stock-illustration-light-wood-background.jpg");
 }
 
-header {
+/* header {
   position: fixed;
   top: 0px;
   height: 12vh;
   width: 1400px;
   z-index: 1;
+} */
+
+header{
+  height: 10vh;
+  max-width: 2560px;
+  position: static;
+  /* position: fixed; */
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #2d6d5c;
+  opacity: 90%;
 }
+
 header nav ul{
   display: flex;
   width: 100%;
@@ -101,14 +118,16 @@ header nav ul{
 
 
 header>nav {
-  background-color: #2d6d5c;
+  /* background-color: #2d6d5c; */
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   /* min-width: 10px; */
-  box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70);
+  /* box-shadow: 20px 20px 20px -4px rgba(0, 0, 0, 0.70); */
 }
 
 header>nav>ul {
@@ -653,40 +672,14 @@ footer>ul>li:nth-child(4) a:before {
   background: #2B2C1E;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
-  main {
-    max-width: 1400px;
-  }
-
-  header {
-    max-width: 1400px;
-  }
-}
-
-@media (min-width: 770px) and (max-width: 1024px) {
-  main {
-    max-width: 1000px;
-  }
-
-  header {
-    max-width: 1030px;
-  }
-}
-
-footer>ul>li>a {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-}
-
 @media (min-width: 426px) and (max-width: 768px) {
-  main {
+   main {
     max-width: 740px;
   }
 
   header {
     max-width: 760px;
-  }
+  } 
 
   header nav ul li{
     width: 50%;
@@ -715,7 +708,7 @@ footer>ul>li>a {
     font-size: 60px;
   }
 }
-/* LISTO */
+
 @media screen and (max-width: 425px) {
   main {
     max-width: 370px;
