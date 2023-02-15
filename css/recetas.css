@@ -14,18 +14,10 @@ body {
   background-image: url("https://static8.depositphotos.com/1062321/800/v/600/depositphotos_8008544-stock-illustration-light-wood-background.jpg");
 }
 
-/* header {
-  position: fixed;
-  top: 0px;
-  height: 12vh;
-  width: 1400px;
-  z-index: 1;
-} */
-
 header{
   height: 10vh;
   max-width: 2560px;
-  position: static;
+  position: sticky;
   /* position: fixed; */
   z-index: 1;
   top: 0px;
@@ -35,7 +27,6 @@ header{
   align-items: center;
   display: flex;
   background-color: #2d6d5c;
-  opacity: 90%;
 }
 
 header nav ul{
